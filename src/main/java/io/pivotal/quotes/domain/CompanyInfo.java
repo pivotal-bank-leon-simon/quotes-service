@@ -22,7 +22,17 @@ public class CompanyInfo implements Comparable<CompanyInfo> {
 	private String name;
 	@JsonProperty("Exchange")
 	private String exchange;
-	
+
+	public CompanyInfo() {
+
+	}
+
+	public CompanyInfo(String symbol, String name, String exchange) {
+		this.symbol = symbol;
+		this.name = name;
+		this.exchange = exchange;
+	}
+
 	public String getSymbol() {
 		return symbol;
 	}
